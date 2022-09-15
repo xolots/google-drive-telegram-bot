@@ -21,76 +21,76 @@ class BotCommands:
   YtDl = ['ytdl']
 
 class Messages:
-    START_MSG = "**Hi there {}.**\n__I'm Google Drive Uploader Bot.You can use me to upload any file / video to Google Drive from direct link or Telegram Files.__\n__You can know more from /help.__"
+    START_MSG = "**Halo {}.**\n__Aku adalah Google Drive Uploader Bot.Kamu bisa mengupload file,photo / video ke Google Drive melalui directlink ataupun dari telegram.__\n__Kamu bisa membaca tutorial disini /help.__"
 
     HELP_MSG = [
         ".",
-        "**Google Drive Uploader**\n__I can upload files from direct link or Telegram Files to your Google Drive. All i need is to authenticate me to your Google Drive Account and send a direct download link or Telegram File.__\n\nI have more features... ! Wanna know about it ? Just walkthrough this tutorial and read the messages carefully.",
+        "**Google Drive Uploader**\n__Aku bisa mengupload file dari direct link ataupun telegram ke google drive kamu. Yang perlu aku lakukan adalah mengautentikasi kamu dan kamu dapat mengirim link download langsung ataupun file,photo,gambar,dokumen melalui Telegram.__\n\nAku punya banyak fitur... ! Pengen Tau ? Baca Tutorial Berikut Dengan Hati-Hati.",
         
-        f"**Authenticating Google Drive**\n__Send the /{BotCommands.Authorize[0]} commmand and you will receive a URL, visit URL and follow the steps and send the received code here. Use /{BotCommands.Revoke[0]} to revoke your currently logged Google Drive Account.__\n\n**Note: I will not listen to any command or message (except /{BotCommands.Authorize[0]} command) until you authorize me.\nSo, Authorization is mandatory !**",
+        f"**Autentikasi Google Drive**\n__Kirim /{BotCommands.Authorize[0]} commmand dan kamu akan mendapatkan URL, klik URL dan ikuti petunjuk yang ada dan tempel kode yang kamu dapat disini. Gunakan /{BotCommands.Revoke[0]} untuk logout dari akun google kamu.__\n\n**Catatan: Aku tidak akan mendengarkan perintah/command apapun (kecuali /{BotCommands.Authorize[0]} command) sampai kamu mengauterisasi aku.\nJadi, Autorisasi itu wajib !**",
         
-        f"**Direct Links**\n__Send me a direct download link for a file and i will download it on my server and Upload it to your Google Drive Account. You can rename files before uploading to GDrive Account. Just send me the URL and new filename separated by ' | '.__\n\n**__Examples:__**\n```https://example.com/AFileWithDirectDownloadLink.mkv | New FileName.mkv```\n\n**Telegram Files**\n__To Upload telegram files in your Google drive Account just send me the file and i will download and upload it to your Google Drive Account. Note: Telegram Files Downloading are slow. it may take longer for big files.__\n\n**YouTube-DL Support**\n__Download files via youtube-dl.\nUse /{BotCommands.YtDl[0]} (YouTube Link/YouTube-DL Supported site link)__",
+        f"**Direct Links**\n__Kirim aku directlink yang dapat di download dan aku akan menyimpannya di server dan mengupload nya di google drive kamu. Kamu bisa menamai file sebelum di upload di google drive. Kirim aku url dan nama file dipisahkan dengan ' | '.__\n\n**__Contoh:__**\n```https://example.com/AFileWithDirectDownloadLink.mkv | New FileName.mkv```\n\n**Telegram Files**\n__Untuk mengupload file telegram ke google drive kamu, kamu hanya perlu mengirim ke sini dan aku akan menguploadnya ke google drive. Catatan: Mendownload File telegram lambat. jadi membutuhkan banyak waktu jika ukuran file besar.__\n\n**YouTube-DL Support**\n__Download files melalui youtube-dl.\nGunakan /{BotCommands.YtDl[0]} (YouTube Link/YouTube-DL Supported site link [DEV])__",
         
-        f"**Custom Folder for Upload**\n__Want to upload in custom folder or in__ **TeamDrive** __ ?\nUse /{BotCommands.SetFolder[0]} (Folder URL) to set custom upload folder.\nAll the files are uploaded in the custom folder you provide.__",
+        f"**Custom Folder for Upload**\n__ingin mengupload di folder pilihan kamu?__ **TeamDrive** __ ?\nGunakan /{BotCommands.SetFolder[0]} (Folder URL) untuk mengubah folder upload.\nSemua file akan di upload di folder yang kamu pilih.__",
         
-        f"**Delete Google Drive Files**\n__Delete google drive files. Use /{BotCommands.Delete[0]} (File/Folder URL) to delete file or reply /{BotCommands.Delete[0]} to bot message.\nYou can also empty trash files use /{BotCommands.EmptyTrash[0]}\nNote: Files are deleted permanently. This process cannot be undone.\n\n**Copy Google Drive Files**\n__Yes, Clone or Copy Google Drive Files.\n__Use /{BotCommands.Clone[0]} (File id / Folder id or URL) to copy Google Drive Files in your Google Drive Account.__",
+        f"**Hapus Google Drive Files**\n__Hapus file Google Drive. Gunakan /{BotCommands.Delete[0]} (File/Folder URL) untuk menghapus file atau balas /{BotCommands.Delete[0]} pesan ke bot.\nKamu bisa membersihkan Sampah/Trash /{BotCommands.EmptyTrash[0]}\nCatatan: File dihapus secara permanen. Proses ini tidak bisa dibatalkan.\n\n**Copy Google Drive Files**\n__Yuppp!!, Clone atau Copy Google Drive Files.\n__Gunakan /{BotCommands.Clone[0]} (File id / Folder id atau URL) untuk copy file di akun google drive kamu.__",
         
-        "**Rules & Precautions**\n__1. Don't copy BIG Google Drive Files/Folders. It may hang the bot and your files maybe damaged.\n2. Send One request at a time unless bot will stop all processes.\n3. Don't send slow links @transload it first.\n4. Don't misuse, overload or abuse this free service.__",
+        "**Peraturan dan Ketentuan**\n__1. Jangan copy file berukuran besar. Hal ini dapat menyebabkan bot menjadi hang.\n2. Kirim hanya 1 request kecuali bot sudah menyelesaikan semua proses.\n3. Jangan mengirim link lambat @transload dulu.\n4. Jangan membuat overload atau menyalahgunakan layanan ini.__",
         
         # Dont remove this ↓ if you respect developer.
-        "**Developed by @viperadnan**"
+        "**Developed by @viperadnan and @xolots404**"
         ]
      
     RATE_LIMIT_EXCEEDED_MESSAGE = "❗ **Rate Limit Exceeded.**\n__User rate limit exceeded try after 24 hours.__"
     
-    FILE_NOT_FOUND_MESSAGE = "❗ **File/Folder not found.**\n__File id - {} Not found. Make sure it\'s exists and accessible by the logged account.__"
+    FILE_NOT_FOUND_MESSAGE = "❗ **File/Folder tidak ditemukan.**\n__File id - {} tidak ditemukan. Pastikan file ada dan bisa diakses.__"
     
-    INVALID_GDRIVE_URL = "❗ **Invalid Google Drive URL**\nMake sure the Google Drive URL is in valid format."
+    INVALID_GDRIVE_URL = "❗ **Invalid Google Drive URL**\nPastikan link Google Drive sesuai dengan format."
     
-    COPIED_SUCCESSFULLY = "✅ **Copied successfully.**\n[{}]({}) __({})__"
+    COPIED_SUCCESSFULLY = "✅ **Berhasil Di COpy.**\n[{}]({}) __({})__"
     
-    NOT_AUTH = f"🔑 **You have not authenticated me to upload to any account.**\n__Send /{BotCommands.Authorize[0]} to authenticate.__"
+    NOT_AUTH = f"🔑 **Kamu tidak terautentikasi di akun manapun.**\n__Kirim /{BotCommands.Authorize[0]} untuk mengautentikasi.__"
     
-    DOWNLOADED_SUCCESSFULLY = "📤 **Uploading File...**\n**Filename:** ```{}```\n**Size:** ```{}```"
+    DOWNLOADED_SUCCESSFULLY = "📤 **Mengupload File...**\n**Namafile:** ```{}```\n**Ukuran:** ```{}```"
     
-    UPLOADED_SUCCESSFULLY = "✅ **Uploaded Successfully.**\n[{}]({}) __({})__"
+    UPLOADED_SUCCESSFULLY = "✅ **Berhasil Di Upload.**\n[{}]({}) __({})__"
     
-    DOWNLOAD_ERROR = "❗**Downloader Failed**\n{}\n__Link - {}__"
+    DOWNLOAD_ERROR = "❗**Gagal Mendownload**\n{}\n__Link - {}__"
     
-    DOWNLOADING = "📥 **Downloading File...\nLink:** ```{}```"
+    DOWNLOADING = "📥 **Mendownload File...\nLink:** ```{}```"
     
-    ALREADY_AUTH = "🔒 **Already authorized your Google Drive Account.**\n__Use /revoke to revoke the current account.__\n__Send me a direct link or File to Upload on Google Drive__"
+    ALREADY_AUTH = "🔒 **Akun sudah terauntetikasi.**\n__Gunakan /revoke untuk logout.__\n__Kirimkan directlink ataupun file yang akan di upload ke Google Drive__"
     
-    FLOW_IS_NONE = f"❗ **Invalid Code**\n__Run {BotCommands.Authorize[0]} first.__"
+    FLOW_IS_NONE = f"❗ **Invalid Code**\n__Jalankan {BotCommands.Authorize[0]} dulu.__"
     
-    AUTH_SUCCESSFULLY = '🔐 **Authorized Google Drive account Successfully.**'
+    AUTH_SUCCESSFULLY = '🔐 **Akun Berhasil Di Autorisasi.**'
     
-    INVALID_AUTH_CODE = '❗ **Invalid Code**\n__The code you have sent is invalid or already used before. Generate new one by the Authorization URL__'
+    INVALID_AUTH_CODE = '❗ **Invalid Code**\n__Code yang kamu kirim invalid atau sudah digunakan sebelumnya. Generate kode baru dengan link autorisasi URL__'
     
-    AUTH_TEXT = "⛓️ **To Authorize your Google Drive account visit this [URL]({}) and send the generated code here.**\n__Visit the URL > Allow permissions > you will get a code > copy it > Send it here__"
+    AUTH_TEXT = "⛓️ **Untuk autorisasi akun kamu kunjungi url berikut [URL]({}) dan kirim kode yang kamu dapat ke sini.**\n__kunjungi URL > Allow permissions > kamu akan mendapatkan kode > copy > Kirim ke sini__"
     
-    DOWNLOAD_TG_FILE = "📥 **Downloading File...**\n**Filename:** ```{}```\n**Size:** ```{}```\n**MimeType:** ```{}```"
+    DOWNLOAD_TG_FILE = "📥 **Mendownload File...**\n**Nama File:** ```{}```\n**Ukuran:** ```{}```\n**MimeType:** ```{}```"
     
-    PARENT_SET_SUCCESS = '🆔✅ **Custom Folder link set successfully.**\n__Your custom folder id - {}\nUse__ ```/{} clear``` __to clear it.__'
+    PARENT_SET_SUCCESS = '🆔✅ **Custom Folder berhasil di ubah.**\n__custom folder id kamu - {}\nGunakan__ ```/{} clear``` __untuk menghapus.__'
     
-    PARENT_CLEAR_SUCCESS = f'🆔🚮 **Custom Folder ID Cleared Successfuly.**\n__Use__ ```/{BotCommands.SetFolder[0]} (Folder Link)``` __to set it back__.'
+    PARENT_CLEAR_SUCCESS = f'🆔🚮 **Custom Folder ID Berhasil Di Bersihkan.**\n__Use__ ```/{BotCommands.SetFolder[0]} (Folder Link)``` __untuk menambahkannya kembali__.'
     
-    CURRENT_PARENT = "🆔 **Your Current Custom Folder ID - {}**\n__Use__ ```/{} (Folder link)``` __to change it.__"
+    CURRENT_PARENT = "🆔 **Custom Folder ID kamu - {}**\n__Gunakan__ ```/{} (Folder link)``` __untuk mengubahnya.__"
     
-    REVOKED = f"🔓 **Revoked current logged account successfully.**\n__Use /{BotCommands.Authorize[0]} to authenticate again and use this bot.__"
+    REVOKED = f"🔓 **Berhasil logout.**\n__Gunakan /{BotCommands.Authorize[0]} untuk autorisasi dan menggunakan bot ini.__"
     
-    NOT_FOLDER_LINK = "❗ **Invalid folder link.**\n__The link you send its not belong to a folder.__"
+    NOT_FOLDER_LINK = "❗ **Invalid folder link.**\n__Link yang kamu berikan bukan folder.__"
     
-    CLONING = "🗂️ **Cloning into Google Drive...**\n__G-Drive Link - {}__"
+    CLONING = "🗂️ **Cloning ke Google Drive...**\n__G-Drive Link - {}__"
     
-    PROVIDE_GDRIVE_URL = "**❗ Provide a valid Google Drive URL along with commmand.**\n__Usage - /{} (GDrive Link)__"
+    PROVIDE_GDRIVE_URL = "**❗ Provide a valid Google Drive URL along with commmand.**\n__Gunakan - /{} (GDrive Link)__"
     
-    INSUFFICIENT_PERMISSONS = "❗ **You have insufficient permissions for this file.**\n__File id - {}__"
+    INSUFFICIENT_PERMISSONS = "❗ **Kamu tidak mempunyai akses ke file ini.**\n__File id - {}__"
     
-    DELETED_SUCCESSFULLY = "🗑️✅ **File Deleted Successfully.**\n__File deleted permanently !\nFile id - {}__"
+    DELETED_SUCCESSFULLY = "🗑️✅ **File berhasil di hapus.**\n__File Dihapus Permanen !\nFile id - {}__"
     
     WENT_WRONG = "⁉️ **ERROR: SOMETHING WENT WRONG**\n__Please try again later.__"
     
-    EMPTY_TRASH = "🗑️🚮**Trash Emptied Successfully !**"
+    EMPTY_TRASH = "🗑️🚮**Berhasil membersihkan Trash/Sampah !**"
     
     PROVIDE_YTDL_LINK = "❗**Provide a valid YouTube-DL supported link.**"
